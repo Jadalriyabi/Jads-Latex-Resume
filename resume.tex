@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Jad Alriyabi
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Jad Alriyabi} \\ \vspace{1pt}
+    Vancouver, BC $|$ \small 778-325-1945 $|$ \href{mailto:jad.alriyabi@gmail.com}{\underline{jad.alriyabi@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/jadalriyabi/}{\underline{linkedin.com/in/jadalriyabi}} $|$
+    \href{https://github.com/Jadalriyabi}{\underline{github.com/Jadalriyabi}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Simon Fraser University}{Vancouver, BC}
+      {Bachelor of Science in Computer Science, Concentration in AI, Minor in Business}{Jan. 2020 -- Oct. 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Courses:} Cloud Computing, Artificial Intelligence, Data Structures and Algorithms, Cyber Security}
+        \resumeItem{\textbf{Certifications:} AWS Certified Solutions Architect, Docker Certified Associate, Certified Scrum Master}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer - Intern}{August 2024 -- Present}
+      {Absolute Security}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Reduced bug investigation time by 30\% by designing and deploying scalable RESTful APIs integrated with cloud-based services using AWS and React JS leading to a successful tool for QA.}
+        \resumeItem{Improved QA efficiency by 25\% by developing an internal LLM tool using TypeScript, PyTorch, and React.}
+        \resumeItem{Reduced deployment time by 14\% by designing and deploying CI/CD pipelines for API integrations, reducing deployment time by 40\%.}
+        \resumeItem{Found 8+ customer-facing defects by creating automated stress and performance tests using Pytest.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {AI Software Engineering Resident }{June 2024 -- Present}
+      {Headstarter AI}{Remote}
+      \resumeItemListStart
+        \resumeItem{Built and deployed 5 AI projects leveraging React JS, NoSQL, and AWS, following agile methodologies with weekly sprints and incorporated CI/CD practices for iterative deployment.}
+        \resumeItem{Containerized 5+ AI tools with Docker, enabling seamless deployment across cloud platforms with each built app.}
+        \resumeItem{Led team of 3 engineers as principal engineer to develop an customer support agent using Next.js, integrated a custom RAG pipeline using OpenAI that responds based on a company's knowledge base.}
+        \resumeItem{Scaled each web-app to 200+ users by iterating on user feedback to make continuous optimizations.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Technical Program Manager - Coop  }{January 2024 -- August 2024}
+      {Absolute Security}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Served as Scrum Master for 3+ teams by leading scrum sessions, facilitating sprint planning sessions aligning with team velocity using Jira, leading to successful product releases.}
+        \resumeItem{Facilitated sprint planning and retrospectives for teams using Jira, ensuring alignment on CI/CD pipelines.}
+        \resumeItem{Delivered automated tools using Python, enhancing the team's operational workflows for multiple processes.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer }{April 2023 -- April 2024}
+      {SFU MSA}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Implemented scalable user authentication for a library inventory management system using React and MongoDB, providing a secure and seamless user experience to over 1500 monthly users.}
+        \resumeItem{Attracting 150+ monthly new users by Improved frontend functionality using JavaScript and CSS.}     
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Whale and Dolphin AI Identification} $|$ \emph{Python, Pytorch,  PostgreSQL, Docker}}{June 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a CNN model for a Kaggle competition using TensorFlow to classify whale and dolphin images,  handling large datasets and achieving an accuracy score of 99\% through extensive hyperparameter tuning.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Developer Coach GPT AI Chatbot} $|$ \emph{React, Typescript, Javascript, AWS, OpenAI API}}{August 2024}
+          \resumeItemListStart
+            \resumeItem{Implemented robust backend services using React with secure AWS hosting, incorporating monitoring tools to ensure uptime and stability for 1000+ users.}
+            \resumeItem{Deployed chatbot infrastructure using Docker and AWS, ensuring scalable and secure hosting.}
+            \resumeItem{Achieved \$1000 in revenue by developing the front-end (React, Next.js) and back-end (Node.js, Firebase) of the web app, deploying on AWS S3 to ensure CI/CD.}
+          \resumeItemListEnd   
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, Bash, TypeScript, SQL (Postgres)} \\
+     \textbf{Infrastructure Tools}{: Docker, Kubernetes, Terraform, Ansible, Prometheus, Grafana} \\
+     \textbf{Cloud Platforms}{: AWS (EC2, S3, Lambda), Google Cloud Platform, Azure} \\
+     \textbf{DevOps Practices}{: CI/CD pipelines, Infrastructure-as-Code, Monitoring, SaaS Development} \\
+     \textbf{Developer Tools}{: Git, Jenkins, PyCharm, IntelliJ, Visual Studio}
+    }}
+\end{itemize}
+
+
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Java, Javascript, Python, C/C++, SQL (Postgres), HTML/CSS, R} \\
+%      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+%      \textbf{Developer Tools}{: Git, AWS, Docker, Google Cloud Platform, Kubernetes, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+%      \textbf{Libraries}{: pytorch, xgboost, request, stripe, clerk, openai, firebase, pandas, NumPy, Matplotlib}
+%     }}
+%  \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
